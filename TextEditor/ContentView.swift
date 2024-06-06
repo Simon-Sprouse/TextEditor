@@ -7,6 +7,9 @@
 
 import SwiftUI
 import AppKit
+import Cocoa
+import CoreServices
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     @State private var text: String = ""
@@ -31,7 +34,7 @@ struct ContentView: View {
     
     private func openFile() {
         let panel = NSOpenPanel()
-        panel.allowedFileTypes = ["txt"]
+        panel.allowedContentTypes = [UTType.plainText]
         if panel.runModal() == .OK, let url = panel.url {
             if let fileContents = try? String(contentsOf: url) {
                 text = fileContents
@@ -42,7 +45,7 @@ struct ContentView: View {
     
     private func saveFile() {
         let panel = NSSavePanel()
-        panel.allowedFileTypes = ["txt"]
+        panel.allowedContentTypes = [UTType.plainText]
         panel.nameFieldStringValue = fileName
         if panel.runModal() == .OK, let url = panel.url {
             try? text.write(to: url, atomically: true, encoding: .utf8)
