@@ -11,9 +11,22 @@ import Cocoa
 import CoreServices
 import UniformTypeIdentifiers
 
+func rgbToColor(_ r:Int, _ g:Int, _ b:Int) -> Color {
+    return Color(
+        red:Double(r)/255,
+        green:Double(g)/255,
+        blue:Double(b)/255
+    )
+}
+
 struct ContentView: View {
-    @State private var text: String = ""
+    @State private var text: String = "Enter Yor Text Here"
     @State private var fileName: String = "Untitled"
+    
+    
+   
+    
+    let background_color: Color = rgbToColor(255, 0 , 80)
     
     var body: some View {
         VStack {
@@ -25,11 +38,14 @@ struct ContentView: View {
                     saveFile()
                 }
             }
+
             TextEditor(text: $text)
+                .scrollContentBackground(.hidden)
                 .padding()
-                .border(Color.gray, width: 1)
+                .background(background_color)
         }
-        .padding()
+        .padding([.top], 10)
+        .background(Color.green)
     }
     
     private func openFile() {
