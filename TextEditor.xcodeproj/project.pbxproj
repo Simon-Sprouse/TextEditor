@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5B764D2C12C11100386B77 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B764C2C12C11100386B77 /* HelperFunctions.swift */; };
 		5DF6034C2C117AE90018E943 /* TextEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6034B2C117AE90018E943 /* TextEditorApp.swift */; };
 		5DF6034E2C117AE90018E943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6034D2C117AE90018E943 /* ContentView.swift */; };
 		5DF603502C117AEB0018E943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF6034F2C117AEB0018E943 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5B764C2C12C11100386B77 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		5DF603482C117AE90018E943 /* TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF6034B2C117AE90018E943 /* TextEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorApp.swift; sourceTree = "<group>"; };
 		5DF6034D2C117AE90018E943 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				5DF6034B2C117AE90018E943 /* TextEditorApp.swift */,
 				5DF6034D2C117AE90018E943 /* ContentView.swift */,
+				5D5B764C2C12C11100386B77 /* HelperFunctions.swift */,
 				5DF6034F2C117AEB0018E943 /* Assets.xcassets */,
 				5DF603542C117AEB0018E943 /* TextEditor.entitlements */,
 				5DF603512C117AEB0018E943 /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				5DF6034E2C117AE90018E943 /* ContentView.swift in Sources */,
 				5DF6034C2C117AE90018E943 /* TextEditorApp.swift in Sources */,
+				5D5B764D2C12C11100386B77 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
